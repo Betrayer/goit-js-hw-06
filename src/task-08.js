@@ -3,8 +3,8 @@
 import users from "./users.js";
 
 const getUsersWithFriend = (users, friendName) => {
-  const smth = users.filter(user => user.friends.includes(friendName));
-  return smth.map(user => user.name);
+  const friendsList = users.filter(user => user.friends.includes(friendName));
+  return friendsList.map(user => user.name);
 };
 
 console.log(getUsersWithFriend(users, "Briana Decker"));
